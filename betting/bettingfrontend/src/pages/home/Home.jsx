@@ -5,6 +5,8 @@ import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
 import Table from "../../components/table/Table";
+import GamesHeader from '../../components/games/Header'
+import GamesFeed from "../../components/feed/GamesFeed";
 
 const Home = () => {
   return (
@@ -12,7 +14,7 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-        <div className="widgets">
+        {/* <div className="widgets">
           <Widget type="user" />
           <Widget type="order" />
           <Widget type="earning" />
@@ -25,6 +27,10 @@ const Home = () => {
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
           <Table />
+        </div> */}
+        <div className="games-header">
+          <GamesHeader></GamesHeader>
+          <GamesFeed></GamesFeed>
         </div>
       </div>
     </div>
@@ -32,3 +38,9 @@ const Home = () => {
 };
 
 export default Home;
+
+
+// flex: 1;
+//   border-right: 0.5px solid rgb(230, 227, 227);
+//   min-height: 100vh;
+//   background-color: white;

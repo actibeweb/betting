@@ -1,0 +1,30 @@
+
+
+
+.games-header-highlight{
+    box-sizing: border-box;
+    color: #050505;
+
+   
+
+    .header-bar{
+        border-top-left-radius: 0.28em;
+        border-top-right-radius: 0.28em;
+        background-color: #2c2c2c;
+        height: 40px;
+
+        .header-content {
+            font-family: Interface, Arial, sans-serif;
+            display: inline-block;
+            /* min-width: 134px; */
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 14px;
+            color: #FFF;
+            padding: 13px;
+        }
+        
+    }
+
+}
+

@@ -1,0 +1,12 @@
+.games-feed {
+  flex: 1;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  // min-height: 100vh;
+  max-width: 52vw;
+  background-color: rgb(242, 235, 235);
+
+  .wrapper {
+    max-width: 100vh;
+    padding: 20px 0px 20px 20px;
+  }
+}
