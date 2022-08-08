@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <header className="header-section">
@@ -32,7 +32,7 @@ const Navbar = () => {
                       Home
                     </a>
                   </li>
-              
+
                   <li className="nav-item dropdown main-navbar">
                     <a
                       className="nav-link dropdown-toggle"
@@ -44,47 +44,46 @@ const Navbar = () => {
                     </a>
                     <ul className="dropdown-menu main-menu shadow">
                       <li>
+                        <Link to="/sports/soccer">
+
                         <a className="nav-link" href="soccer-bets-2.html">
-                          Tennis
-                        </a>
-                      </li>
-                      <li>
-                        <a className="nav-link" href="soccer-bets-1.html">
                           Soccer
                         </a>
+                        </Link>
                       </li>
-                      <li>
-                        <a className="nav-link" href="soccer-bets-2.html">
-                          NBA
-                        </a>
-                      </li>
+                  
                     </ul>
                   </li>
-                  
-              
+
                   <li className="nav-item">
-                    <a className="nav-link" href="contact.html">
-                      Contact
-                    </a>
+                    <Link to="/contact">
+                      <a className="nav-link" href="#">
+                        Contact
+                      </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="right-area header-action d-flex align-items-center max-un">
-                  <button
-                    type="button"
-                    className="login"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginMod"
-                  >
-                    Login
-                  </button>
-                  <button
-                    type="button"
-                    className="cmn-btn reg"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginMod"
-                  >
-                    Sign Up
-                  </button>
+                  <Link to="/auth">
+                    <button
+                      type="button"
+                      className="login"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginMod"
+                    >
+                      Login
+                    </button>
+                  </Link>
+                  <Link to="/auth">
+                    <button
+                      type="button"
+                      className="cmn-btn reg"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginMod"
+                    >
+                      Sign Up
+                    </button>
+                  </Link>
                 </div>
               </div>
             </nav>
